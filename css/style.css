@@ -4,7 +4,8 @@
     box-sizing: border-box;
 }
 body{
-    background: linear-gradient(10deg, #6b6b6b , #fff);
+    /* background: linear-gradient(10deg, #6b6b6b , #fff); */
+    background-color: #333;
     height: 100vh;
 }
 img{
@@ -47,4 +48,37 @@ img{
         grid-template-columns: 1fr;
         margin: 2rem;
     }
+}
+main ul{
+    margin: 2rem auto;
+    width: 1000px;
+}
+main li img{
+    height: 300px;
+    width: 350px;
+    object-fit: cover;
+}
+main li{
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 1px 1px  2px #333;
+}
+.card-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3rem 4rem;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.card-content h1{
+    padding-bottom: 1.5rem;
+}
+.card-content a{
+   text-align: right;
+   text-decoration: none;
+   color: lightblue;
+   
 }
