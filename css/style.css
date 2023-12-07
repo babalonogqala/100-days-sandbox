@@ -48,19 +48,24 @@ img{
         grid-template-columns: 1fr;
         margin: 2rem;
     }
-    main ul{
+    main{
         grid-template-columns: repeat(1, 1fr);
+    }
+    main ul{
         grid-column: 1 ;
     }
     
 }
-
-main ul{
-    margin: 2rem auto;
-    max-width: 1200px; 
+main{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 0.5rem;
+    margin: auto;
+    width: 1200px;
+}
+main ul{
+    margin: 2rem auto;
+    max-width: 1200px; 
 }
 main ul:nth-child(1){
     grid-column: 1 / span 2;
